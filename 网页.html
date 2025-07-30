@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的旅行足迹</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        .photo-item {
+            transition: transform 0.3s ease;
+        }
+        .photo-item:hover {
+            transform: scale(1.03);
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-blue-600 text-white py-6">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-3xl font-bold">我的旅行足迹</h1>
+            <p class="mt-2">用照片记录走过的每一段路</p>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- 照片1 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden photo-item">
+                <img src="https://picsum.photos/id/1036/600/400" alt="海边日落" class="w-full h-56 object-cover">
+                <div class="p-4">
+                    <h3 class="font-bold text-lg">三亚海边</h3>
+                    <p class="text-gray-600 mt-1">2023年夏天，第一次看海上日落</p>
+                </div>
+            </div>
+
+            <!-- 照片2 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden photo-item">
+                <img src="https://picsum.photos/id/1015/600/400" alt="雪山" class="w-full h-56 object-cover">
+                <div class="p-4">
+                    <h3 class="font-bold text-lg">丽江雪山</h3>
+                    <p class="text-gray-600 mt-1">海拔3000米，呼吸到的每一口空气都很清冽</p>
+                </div>
+            </div>
+
+            <!-- 照片3 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden photo-item">
+                <img src="https://picsum.photos/id/1039/600/400" alt="森林" class="w-full h-56 object-cover">
+                <div class="p-4">
+                    <h3 class="font-bold text-lg">西双版纳雨林</h3>
+                    <p class="text-gray-600 mt-1">听着虫鸣散步，像闯进了童话世界</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-4 mt-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>© 2023 我的旅行相册 | 分享生活中的美好</p>
+        </div>
+    </footer>
+</body>
+</html>
